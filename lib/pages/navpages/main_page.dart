@@ -21,17 +21,10 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: pages[0],
-      bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Colors.black54,
-          unselectedItemColor: Colors.grey.withOpacity(0.5),
-          showUnselectedLabels: false,
-          showSelectedLabels: false,
-          elevation: 0,
-          type: BottomNavigationBarType.fixed,
-          items: [
-            BottomNavigationBarItem(icon: Icon(Icons.apps,)),
-          ]
-    );
+        body: pages[0],
+        bottomNavigationBar:
+            BottomNavigationBar(selectedItemColor: Colors.black54, items: [
+          BottomNavigationBarItem(icon: Icon(Icons.apps)),
+        ]));
   }
 }
